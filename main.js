@@ -7,19 +7,16 @@ const reader = rl.createInterface({
     input: fs.createReadStream("users.csv")
 });
 const headers = {};
+let users = [];
 
-const readCSV = async () => {
-    // READ LINE-BY-LINE INTO ARRAY
-    const users = [];
+const readFromCSV = () => {
     reader.on("line", (row) => {
         users.push(row.split(",").map(line => line.trim().split(" ")[0]));
-        // console.log(users);
+        // console.log(row);
     });
-
-    return users;
 }
 
-const saveToFile = async (users) => {
+const writeToCSV = () => {
     let csv = "";
     reader.on("close", () => {
 
@@ -29,11 +26,9 @@ const saveToFile = async (users) => {
 
         fs.writeFileSync("output.csv", csv);
     });
-
-    return users
 }
 
-const saveJsonFile = async (users) => {
+const writeToJson = () => {
     // WRITE TO JSON AND OUTPUT
     let json = "{\n\t";
     reader.on("close", () => {
@@ -59,7 +54,7 @@ const saveJsonFile = async (users) => {
     });
 
 }
-
-readCSV().then(saveToFile).then(saveJsonFile)
-
 // (B) TO CSV STRING
+readFromCSV();
+writeToCSV();
+writeToJson()
