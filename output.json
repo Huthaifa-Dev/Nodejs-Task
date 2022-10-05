@@ -1,24 +1,23 @@
 {
-	"1":{
-		"UserName": "Tamer",
-		"BirthDate": "05/25/1994",
-		"Address": "Nablus",
-		"MobileNumber": "0599999999",
-		"Gender": "M"
-	},
-	"2":{
-		"UserName": "Shaymaa",
-		"BirthDate": "01/01/1990",
-		"Address": "Ramallah",
-		"MobileNumber": "0560000000",
-		"Gender": "F"
-	},
-	"3":{
-		"UserName": "Karam",
-		"BirthDate": "01/01/1999",
-		"Address": "Tubas",
-		"MobileNumber": "0511111111",
-		"Gender": "M"
-	}
-	
+  "1": {
+    "UserName": "Tamer",
+    "BirthDate": "05/25/1994",
+    "Address": "Nablus",
+    "MobileNumber": "0599999999",
+    "Gender": "M"
+  },
+  "2": {
+    "UserName": "Shaymaa",
+    "BirthDate": "01/01/1990",
+    "Address": "Ramallah",
+    "MobileNumber": "0560000000",
+    "Gender": "F"
+  },
+  "3": {
+    "UserName": "Karam",
+    "BirthDate": "01/01/1999",
+    "Address": "Tubas",
+    "MobileNumber": "0511111111",
+    "Gender": "M"
+  }
 }
